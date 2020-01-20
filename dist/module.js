@@ -6408,6 +6408,22 @@ function (_super) {
     });
   };
 
+  MainPanel.prototype.componentDidUpdate = function (prevProps) {
+    if (prevProps.data !== this.props.data) {
+      var bufferLabel = this.props.data.series[0].fields[0].values.buffer;
+      var bufferQuantity_1 = this.props.data.series[0].fields[1].values.buffer;
+      var data = bufferLabel.map(function (item, index) {
+        return {
+          label: item,
+          quantity: bufferQuantity_1[index]
+        };
+      });
+      this.setState({
+        data: data
+      });
+    }
+  };
+
   MainPanel.prototype.render = function () {
     var _a = this.props,
         width = _a.width,
@@ -6430,7 +6446,6 @@ function (_super) {
       colors: {
         //graph: ['#1890FF', '#BAE7FF'], // array or string : 'red' || '#666'
         graph: ['red', 'orange', 'yellow', 'green'],
-        percent: '#000',
         label: '#000',
         value: '#000'
       },
