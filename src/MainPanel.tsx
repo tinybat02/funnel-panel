@@ -24,7 +24,7 @@ export class MainPanel extends PureComponent<Props> {
   }
 
   componentDidUpdate(prevProps: PanelProps) {
-    if (prevProps.data !== this.props.data) {
+    if (prevProps.data.series !== this.props.data.series) {
       const { buffer: bufferLabel } = this.props.data.series[0].fields[0].values as Buffer;
       const { buffer: bufferQuantity } = this.props.data.series[0].fields[1].values as Buffer;
 
