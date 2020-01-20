@@ -6409,7 +6409,7 @@ function (_super) {
   };
 
   MainPanel.prototype.componentDidUpdate = function (prevProps) {
-    if (prevProps.data.series !== this.props.data.series) {
+    if (prevProps.data.series[0] !== this.props.data.series[0]) {
       var bufferLabel = this.props.data.series[0].fields[0].values.buffer;
       var bufferQuantity_1 = this.props.data.series[0].fields[1].values.buffer;
       var data = bufferLabel.map(function (item, index) {
