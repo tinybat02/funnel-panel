@@ -1,0 +1,21 @@
+{
+  "type": "panel",
+  "name": "Funnel Panel",
+  "id": "orgid-funnel-panel",
+  "dataFormats": ["table"],
+  "info": {
+    "description": "Funnel Panel",
+    "author": {
+      "name": "Nam Le"
+    },
+    "keywords": ["funnel"],
+    "screenshots": [],
+    "version": "1.0.0",
+    "updated": "2020-01-20"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "6.3.x",
+    "plugins": []
+  }
+}
