@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { PanelProps, Vector as VectorData } from '@grafana/data';
 import { SimpleOptions } from 'types';
-import { Funnel } from 'funnel-react';
+import { Funnel } from './Funnel-React/src/index';
 
 interface Buffer extends VectorData {
   buffer: number[];

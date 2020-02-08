@@ -11,11 +11,16 @@
   "author": "Nam Le",
   "license": "MIT",
   "devDependencies": {
+    "@babel/plugin-external-helpers": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
     "@grafana/data": "next",
     "@grafana/toolkit": "next",
     "@grafana/ui": "next"
   },
   "dependencies": {
-    "funnel-react": "0.0.6"
+    "babel-loader": "^8.0.6",
+    "react-jss": "^10.0.4"
   }
 }
