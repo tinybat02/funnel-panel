@@ -15,7 +15,5 @@
     "@grafana/toolkit": "next",
     "@grafana/ui": "next"
   },
-  "dependencies": {
-    "funnel-react": "0.0.6"
-  }
+  "dependencies": {}
 }

@@ -86,31 +86,334 @@ define(["@grafana/ui","react"], function(__WEBPACK_EXTERNAL_MODULE__grafana_ui__
 /************************************************************************/
 /******/ ({
 
-/***/ "../node_modules/funnel-react/dist/index.es.js":
-/*!*****************************************************!*\
-  !*** ../node_modules/funnel-react/dist/index.es.js ***!
-  \*****************************************************/
-/*! exports provided: Bar, Funnel */
+/***/ "../node_modules/tslib/tslib.es6.js":
+/*!******************************************!*\
+  !*** ../node_modules/tslib/tslib.es6.js ***!
+  \******************************************/
+/*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(global, module) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Bar", function() { return Bar; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Funnel", function() { return index$2; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "../node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__extends", function() { return __extends; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__assign", function() { return __assign; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__rest", function() { return __rest; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__decorate", function() { return __decorate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__param", function() { return __param; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__metadata", function() { return __metadata; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__awaiter", function() { return __awaiter; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__generator", function() { return __generator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__exportStar", function() { return __exportStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__values", function() { return __values; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__read", function() { return __read; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spread", function() { return __spread; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spreadArrays", function() { return __spreadArrays; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__await", function() { return __await; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncGenerator", function() { return __asyncGenerator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncDelegator", function() { return __asyncDelegator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncValues", function() { return __asyncValues; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function() { return __makeTemplateObject; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importStar", function() { return __importStar; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importDefault", function() { return __importDefault; });
+/*! *****************************************************************************
+Copyright (c) Microsoft Corporation. All rights reserved.
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use
+this file except in compliance with the License. You may obtain a copy of the
+License at http://www.apache.org/licenses/LICENSE-2.0
+
+THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
+MERCHANTABLITY OR NON-INFRINGEMENT.
+
+See the Apache Version 2.0 License for specific language governing permissions
+and limitations under the License.
+***************************************************************************** */
+/* global Reflect, Promise */
+
+var extendStatics = function(d, b) {
+    extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return extendStatics(d, b);
+};
+
+function __extends(d, b) {
+    extendStatics(d, b);
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+}
+
+var __assign = function() {
+    __assign = Object.assign || function __assign(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+        }
+        return t;
+    }
+    return __assign.apply(this, arguments);
+}
+
+function __rest(s, e) {
+    var t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
+        t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === "function")
+        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
+                t[p[i]] = s[p[i]];
+        }
+    return t;
+}
+
+function __decorate(decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+}
+
+function __param(paramIndex, decorator) {
+    return function (target, key) { decorator(target, key, paramIndex); }
+}
+
+function __metadata(metadataKey, metadataValue) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
+}
+
+function __awaiter(thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+}
+
+function __generator(thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+}
+
+function __exportStar(m, exports) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
+
+function __values(o) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator], i = 0;
+    if (m) return m.call(o);
+    return {
+        next: function () {
+            if (o && i >= o.length) o = void 0;
+            return { value: o && o[i++], done: !o };
+        }
+    };
+}
+
+function __read(o, n) {
+    var m = typeof Symbol === "function" && o[Symbol.iterator];
+    if (!m) return o;
+    var i = m.call(o), r, ar = [], e;
+    try {
+        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
+    }
+    catch (error) { e = { error: error }; }
+    finally {
+        try {
+            if (r && !r.done && (m = i["return"])) m.call(i);
+        }
+        finally { if (e) throw e.error; }
+    }
+    return ar;
+}
+
+function __spread() {
+    for (var ar = [], i = 0; i < arguments.length; i++)
+        ar = ar.concat(__read(arguments[i]));
+    return ar;
+}
+
+function __spreadArrays() {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
+
+function __await(v) {
+    return this instanceof __await ? (this.v = v, this) : new __await(v);
+}
+
+function __asyncGenerator(thisArg, _arguments, generator) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var g = generator.apply(thisArg, _arguments || []), i, q = [];
+    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
+    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
+    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
+    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
+    function fulfill(value) { resume("next", value); }
+    function reject(value) { resume("throw", value); }
+    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
+}
+
+function __asyncDelegator(o) {
+    var i, p;
+    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
+    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
+}
+
+function __asyncValues(o) {
+    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    var m = o[Symbol.asyncIterator], i;
+    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
+    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
+    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
+}
+
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+
+function __importStar(mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result.default = mod;
+    return result;
+}
+
+function __importDefault(mod) {
+    return (mod && mod.__esModule) ? mod : { default: mod };
+}
 
 
+/***/ }),
+
+/***/ "../node_modules/webpack/buildin/global.js":
+/*!*************************************************!*\
+  !*** ../node_modules/webpack/buildin/global.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+var g;
+
+// This works in non-strict mode
+g = (function() {
+	return this;
+})();
+
+try {
+	// This works if eval is allowed (see CSP)
+	g = g || new Function("return this")();
+} catch (e) {
+	// This works if the window reference is available
+	if (typeof window === "object") g = window;
+}
+
+// g can still be undefined, but nothing to do about it...
+// We return undefined, instead of nothing here, so it's
+// easier to handle this case. if(!global) { ...}
+
+module.exports = g;
+
+
+/***/ }),
+
+/***/ "../node_modules/webpack/buildin/module.js":
+/*!*************************************************!*\
+  !*** ../node_modules/webpack/buildin/module.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = function(module) {
+	if (!module.webpackPolyfill) {
+		module.deprecate = function() {};
+		module.paths = [];
+		// module.parent = undefined by default
+		if (!module.children) module.children = [];
+		Object.defineProperty(module, "loaded", {
+			enumerable: true,
+			get: function() {
+				return module.l;
+			}
+		});
+		Object.defineProperty(module, "id", {
+			enumerable: true,
+			get: function() {
+				return module.i;
+			}
+		});
+		module.webpackPolyfill = 1;
+	}
+	return module;
+};
+
+
+/***/ }),
+
+/***/ "./Funnel-React/dist/index.js":
+/*!************************************!*\
+  !*** ./Funnel-React/dist/index.js ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global, module) {
+
+function _typeof2(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+function _interopDefault(ex) {
+  return ex && _typeof2(ex) === 'object' && 'default' in ex ? ex['default'] : ex;
+}
+
+var React = __webpack_require__(/*! react */ "react");
+
+var React__default = _interopDefault(React);
+
+var PropTypes = _interopDefault(__webpack_require__(/*! prop-types */ "./Funnel-React/node_modules/prop-types/index.js"));
 
 function _typeof(obj) {
+  "@babel/helpers - typeof";
+
   if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof = function (obj) {
+    _typeof = function _typeof(obj) {
       return typeof obj;
     };
   } else {
-    _typeof = function (obj) {
+    _typeof = function _typeof(obj) {
       return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
     };
   }
@@ -146,7 +449,9 @@ function _toConsumableArray(arr) {
 
 function _arrayWithoutHoles(arr) {
   if (Array.isArray(arr)) {
-    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) arr2[i] = arr[i];
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
+      arr2[i] = arr[i];
+    }
 
     return arr2;
   }
@@ -187,9 +492,9 @@ var createPath = function createPath(index, X, Y, YNext) {
 
   str += ' Z';
   return str;
-};
+}; // si es un solo color asigno los estilos como atributos
 
-// si es un solo color asigno los estilos como atributos
+
 var setAttrs = function setAttrs(element, attributes) {
   if (_typeof(attributes) === 'object') Object.keys(attributes).forEach(function (key) {
     element.setAttribute(key, attributes[key]);
@@ -227,11 +532,15 @@ function _extends() {
   return _extends.apply(this, arguments);
 }
 
-var _typeof$1 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+var _typeof$1 = typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol" ? function (obj) {
+  return _typeof2(obj);
+} : function (obj) {
+  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+};
 
 var isBrowser = (typeof window === "undefined" ? "undefined" : _typeof$1(window)) === "object" && (typeof document === "undefined" ? "undefined" : _typeof$1(document)) === 'object' && document.nodeType === 9;
-
 var isProduction = "development" === 'production';
+
 function warning(condition, message) {
   if (!isProduction) {
     if (condition) {
@@ -296,8 +605,9 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 }
 
 var plainObjectConstrurctor = {}.constructor;
+
 function cloneStyle(style) {
-  if (style == null || typeof style !== 'object') return style;
+  if (style == null || _typeof2(style) !== 'object') return style;
   if (Array.isArray(style)) return style.map(cloneStyle);
   if (style.constructor !== plainObjectConstrurctor) return style;
   var newStyle = {};
@@ -308,10 +618,10 @@ function cloneStyle(style) {
 
   return newStyle;
 }
-
 /**
  * Create a rule instance.
  */
+
 
 function createRule(name, decl, options) {
   if (name === void 0) {
@@ -375,11 +685,12 @@ function toCssValue(value, ignoreImportant) {
 
   return cssValue;
 }
-
 /**
  * Indent a string.
  * http://jsperf.com/array-join-vs-for
  */
+
+
 function indentStr(str, indent) {
   var result = '';
 
@@ -455,9 +766,10 @@ function toCss(selector, style, options) {
 
 var escapeRegex = /([[\].#*$><+~=|^:(),"'`\s])/g;
 var nativeEscape = typeof CSS !== 'undefined' && CSS.escape;
-var escape = (function (str) {
+
+var escape = function escape(str) {
   return nativeEscape ? nativeEscape(str) : str.replace(escapeRegex, '\\$1');
-});
+};
 
 var BaseStyleRule =
 /*#__PURE__*/
@@ -520,6 +832,7 @@ function () {
 
   return BaseStyleRule;
 }();
+
 var StyleRule =
 /*#__PURE__*/
 function (_BaseStyleRule) {
@@ -554,10 +867,10 @@ function (_BaseStyleRule) {
 
 
   var _proto2 = StyleRule.prototype;
-
   /**
    * Apply rule to an element inline.
    */
+
   _proto2.applyTo = function applyTo(renderable) {
     var renderer = this.renderer;
 
@@ -583,7 +896,7 @@ function (_BaseStyleRule) {
 
     for (var prop in this.style) {
       var value = this.style[prop];
-      if (typeof value !== 'object') json[prop] = value;else if (Array.isArray(value)) json[prop] = toCssValue(value);
+      if (_typeof2(value) !== 'object') json[prop] = value;else if (Array.isArray(value)) json[prop] = toCssValue(value);
     }
 
     return json;
@@ -627,6 +940,7 @@ function (_BaseStyleRule) {
 
   return StyleRule;
 }(BaseStyleRule);
+
 var pluginStyleRule = {
   onCreateRule: function onCreateRule(name, style, options) {
     if (name[0] === '@' || options.parent && options.parent.type === 'keyframes') {
@@ -636,7 +950,6 @@ var pluginStyleRule = {
     return new StyleRule(name, style, options);
   }
 };
-
 var defaultToStringOptions = {
   indent: 1,
   children: true
@@ -653,11 +966,14 @@ function () {
     this.type = 'conditional';
     this.at = void 0;
     this.key = void 0;
+    this.query = void 0;
     this.rules = void 0;
     this.options = void 0;
     this.isProcessed = false;
     this.renderable = void 0;
-    this.key = key;
+    this.key = key; // Key might contain a unique suffix in case the `name` passed by user was duplicate.
+
+    this.query = options.name;
     var atMatch = key.match(atRegExp);
     this.at = atMatch ? atMatch[1] : 'unknown';
     this.options = options;
@@ -714,22 +1030,22 @@ function () {
     if (options.children == null) options.children = defaultToStringOptions.children;
 
     if (options.children === false) {
-      return this.key + " {}";
+      return this.query + " {}";
     }
 
     var children = this.rules.toString(options);
-    return children ? this.key + " {\n" + children + "\n}" : '';
+    return children ? this.query + " {\n" + children + "\n}" : '';
   };
 
   return ConditionalRule;
 }();
+
 var keyRegExp = /@media|@supports\s+/;
 var pluginConditionalRule = {
   onCreateRule: function onCreateRule(key, styles, options) {
     return keyRegExp.test(key) ? new ConditionalRule(key, styles, options) : null;
   }
 };
-
 var defaultToStringOptions$1 = {
   indent: 1,
   children: true
@@ -805,6 +1121,7 @@ function () {
 
   return KeyframesRule;
 }();
+
 var keyRegExp$1 = /@keyframes\s+/;
 var refRegExp = /\$([\w-]+)/g;
 
@@ -885,10 +1202,10 @@ function (_BaseStyleRule) {
   }
 
   var _proto = KeyframeRule.prototype;
-
   /**
    * Generates a CSS string.
    */
+
   _proto.toString = function toString(options) {
     var sheet = this.options.sheet;
     var link = sheet ? sheet.options.link : false;
@@ -900,6 +1217,7 @@ function (_BaseStyleRule) {
 
   return KeyframeRule;
 }(BaseStyleRule);
+
 var pluginKeyframeRule = {
   onCreateRule: function onCreateRule(key, style, options) {
     if (options.parent && options.parent.type === 'keyframes') {
@@ -949,6 +1267,7 @@ function () {
 
   return FontFaceRule;
 }();
+
 var pluginFontFaceRule = {
   onCreateRule: function onCreateRule(key, style, options) {
     return key === '@font-face' ? new FontFaceRule(key, style, options) : null;
@@ -983,6 +1302,7 @@ function () {
 
   return ViewportRule;
 }();
+
 var pluginViewportRule = {
   onCreateRule: function onCreateRule(key, style, options) {
     return key === '@viewport' || key === '@-ms-viewport' ? new ViewportRule(key, style, options) : null;
@@ -1028,6 +1348,7 @@ function () {
 
   return SimpleRule;
 }();
+
 var keysMap = {
   '@charset': true,
   '@import': true,
@@ -1038,9 +1359,7 @@ var pluginSimpleRule = {
     return key in keysMap ? new SimpleRule(key, value, options) : null;
   }
 };
-
 var plugins = [pluginStyleRule, pluginConditionalRule, plugin, pluginKeyframeRule, pluginFontFaceRule, pluginViewportRule, pluginSimpleRule];
-
 var defaultUpdateOptions = {
   process: true
 };
@@ -1065,6 +1384,7 @@ function () {
     this.map = {};
     this.raw = {};
     this.index = [];
+    this.counter = 0;
     this.options = void 0;
     this.classes = void 0;
     this.keyframes = void 0;
@@ -1081,7 +1401,7 @@ function () {
 
   var _proto = RuleList.prototype;
 
-  _proto.add = function add(key, decl, ruleOptions) {
+  _proto.add = function add(name, decl, ruleOptions) {
     var _this$options = this.options,
         parent = _this$options.parent,
         sheet = _this$options.sheet,
@@ -1097,15 +1417,25 @@ function () {
       jss: jss,
       Renderer: Renderer,
       generateId: generateId,
-      scoped: scoped
-    }, ruleOptions); // We need to save the original decl before creating the rule
+      scoped: scoped,
+      name: name
+    }, ruleOptions); // When user uses .createStyleSheet(), duplicate names are not possible, but
+    // `sheet.addRule()` opens the door for any duplicate rule name. When this happens
+    // we need to make the key unique within this RuleList instance scope.
+
+
+    var key = name;
+
+    if (name in this.raw) {
+      key = name + "-d" + this.counter++;
+    } // We need to save the original decl before creating the rule
     // because cache plugin needs to use it as a key to return a cached rule.
 
 
     this.raw[key] = decl;
 
     if (key in this.classes) {
-      // For e.g. rules inside of @media container
+      // E.g. rules inside of @media container
       options.selector = "." + escape(this.classes[key]);
     }
 
@@ -1132,7 +1462,7 @@ function () {
   _proto.remove = function remove(rule) {
     this.unregister(rule);
     delete this.raw[rule.key];
-    this.index.splice(this.indexOf(rule), 1);
+    this.index.splice(this.index.indexOf(rule), 1);
   }
   /**
    * Get index of a rule.
@@ -1154,7 +1484,7 @@ function () {
     this.index.slice(0).forEach(plugins$$1.onProcessRule, plugins$$1);
   }
   /**
-   * Register a rule in `.map` and `.classes` maps.
+   * Register a rule in `.map`, `.classes` and `.keyframes` maps.
    */
   ;
 
@@ -1207,10 +1537,10 @@ function () {
     }
 
     if (name) {
-      this.onUpdate(data, this.get(name), options);
+      this.updateOne(this.map[name], data, options);
     } else {
       for (var index = 0; index < this.index.length; index++) {
-        this.onUpdate(data, this.index[index], options);
+        this.updateOne(this.index[index], data, options);
       }
     }
   }
@@ -1219,7 +1549,7 @@ function () {
    */
   ;
 
-  _proto.onUpdate = function onUpdate(data, rule, options) {
+  _proto.updateOne = function updateOne(rule, data, options) {
     if (options === void 0) {
       options = defaultUpdateOptions;
     }
@@ -1426,7 +1756,7 @@ function () {
   ;
 
   _proto.deleteRule = function deleteRule(name) {
-    var rule = this.rules.get(name);
+    var rule = _typeof2(name) === 'object' ? name : this.rules.get(name);
     if (!rule) return false;
     this.rules.remove(rule);
 
@@ -1467,6 +1797,15 @@ function () {
     return this;
   }
   /**
+   * Updates a single rule.
+   */
+  ;
+
+  _proto.updateOne = function updateOne(rule, data, options) {
+    this.rules.updateOne(rule, data, options);
+    return this;
+  }
+  /**
    * Convert rules to a CSS string.
    */
   ;
@@ -1490,10 +1829,10 @@ function () {
   }
 
   var _proto = PluginsRegistry.prototype;
-
   /**
    * Call `onCreateRule` hooks and return an object if returned by a hook.
    */
+
   _proto.onCreateRule = function onCreateRule(name, decl, options) {
     for (var i = 0; i < this.registry.onCreateRule.length; i++) {
       var rule = this.registry.onCreateRule[i](name, decl, options);
@@ -1604,10 +1943,11 @@ function () {
 
   return PluginsRegistry;
 }();
-
 /**
  * Sheets registry to access them all at one place.
  */
+
+
 var SheetsRegistry =
 /*#__PURE__*/
 function () {
@@ -1616,10 +1956,10 @@ function () {
   }
 
   var _proto = SheetsRegistry.prototype;
-
   /**
    * Register a Style Sheet.
    */
+
   _proto.add = function add(sheet) {
     var registry = this.registry;
     var index = sheet.options.index;
@@ -1694,7 +2034,6 @@ function () {
 
   return SheetsRegistry;
 }();
-
 /**
  * This is a global sheets registry. Only DomRenderer will add sheets to it.
  * On the server one should use an own SheetsRegistry instance and add the
@@ -1702,12 +2041,12 @@ function () {
  * each request in order to not leak sheets across requests.
  */
 
-var sheets = new SheetsRegistry();
 
+var sheets = new SheetsRegistry();
 /* eslint-disable */
 // https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
-var globalThis = typeof window != 'undefined' && window.Math == Math ? window : typeof self != 'undefined' && self.Math == Math ? self : Function('return this')();
 
+var globalThis = typeof window != 'undefined' && window.Math == Math ? window : typeof self != 'undefined' && self.Math == Math ? self : Function('return this')();
 var ns = '2f1acc6c3a606b082e5eef5e54414ffb';
 if (globalThis[ns] == null) globalThis[ns] = 0; // Bundle may contain multiple JSS versions at the same time. In order to identify
 // the current version with just one short number and use it for classes generation
@@ -1715,14 +2054,13 @@ if (globalThis[ns] == null) globalThis[ns] = 0; // Bundle may contain multiple J
 // the module.
 
 var moduleId = globalThis[ns]++;
-
 var maxRules = 1e10;
-
 /**
  * Returns a function which generates unique class names based on counters.
  * When new generator function is created, rule counter is reseted.
  * We need to reset the rule counter for SSR for each request.
  */
+
 var createGenerateId = function createGenerateId(options) {
   if (options === void 0) {
     options = {};
@@ -1757,10 +2095,11 @@ var createGenerateId = function createGenerateId(options) {
     return prefix + rule.key + "-" + moduleId + (jssId ? "-" + jssId : '') + "-" + ruleCounter;
   };
 };
-
 /**
  * Cache the value from the first time a function is called.
  */
+
+
 var memoize = function memoize(fn) {
   var value;
   return function () {
@@ -1826,7 +2165,7 @@ function removeProperty(cssRule, prop) {
   try {
     // Support CSSTOM.
     if (cssRule.attributeStyleMap) {
-      cssRule.attributeStyleMap.delete(prop);
+      cssRule.attributeStyleMap["delete"](prop);
     } else {
       cssRule.style.removeProperty(prop);
     }
@@ -1903,10 +2242,11 @@ function findCommentNode(text) {
 
   return null;
 }
-
 /**
  * Find a node before which we can insert the sheet.
  */
+
+
 function findPrevNode(options) {
   var registry = sheets.registry;
 
@@ -2033,8 +2373,8 @@ function () {
     this.setSelector = setSelector;
     this.element = void 0;
     this.sheet = void 0;
-    this.hasInsertedRules = false;
-    // There is no sheet when the renderer is used from a standalone StyleRule.
+    this.hasInsertedRules = false; // There is no sheet when the renderer is used from a standalone StyleRule.
+
     if (sheet) sheets.add(sheet);
     this.sheet = sheet;
 
@@ -2212,7 +2552,7 @@ var Jss =
 function () {
   function Jss(options) {
     this.id = instanceCounter++;
-    this.version = "10.0.0";
+    this.version = "10.0.4";
     this.plugins = new PluginsRegistry();
     this.options = {
       id: {
@@ -2309,6 +2649,7 @@ function () {
   }
   /**
    * Create a rule without a Style Sheet.
+   * [Deprecated] will be removed in the next major version.
    */
   ;
 
@@ -2319,14 +2660,15 @@ function () {
 
     if (options === void 0) {
       options = {};
-    }
+    } // Enable rule without name for inline styles.
 
-    // Enable rule without name for inline styles.
-    if (typeof name === 'object') {
+
+    if (_typeof2(name) === 'object') {
       return this.createRule(undefined, name, style);
     }
 
     var ruleOptions = _extends({}, options, {
+      name: name,
       jss: this,
       Renderer: this.options.Renderer
     });
@@ -2334,9 +2676,7 @@ function () {
     if (!ruleOptions.generateId) ruleOptions.generateId = this.generateId;
     if (!ruleOptions.classes) ruleOptions.classes = {};
     if (!ruleOptions.keyframes) ruleOptions.keyframes = {};
-
     var rule = createRule(name, style, ruleOptions);
-
     if (rule) this.plugins.onProcessRule(rule);
     return rule;
   }
@@ -2360,7 +2700,6 @@ function () {
 
   return Jss;
 }();
-
 /**
  * A better abstraction over CSS.
  *
@@ -2373,6 +2712,8 @@ function () {
  * Export a constant indicating if this browser has CSSTOM support.
  * https://developers.google.com/web/updates/2018/03/cssom
  */
+
+
 var hasCSSTOMSupport = typeof CSS !== 'undefined' && CSS && 'number' in CSS;
 /**
  * Creates a new instance of Jss.
@@ -2385,11 +2726,12 @@ var create = function create(options) {
  * A global Jss instance.
  */
 
-var index = create();
 
+var index = create();
 var now = Date.now();
 var fnValuesNs = "fnValues" + now;
 var fnRuleNs = "fnStyle" + ++now;
+
 function functionPlugin() {
   return {
     onCreateRule: function onCreateRule(name, decl, options) {
@@ -2440,24 +2782,24 @@ function functionPlugin() {
 }
 
 function symbolObservablePonyfill(root) {
-	var result;
-	var Symbol = root.Symbol;
+  var result;
+  var _Symbol = root.Symbol;
 
-	if (typeof Symbol === 'function') {
-		if (Symbol.observable) {
-			result = Symbol.observable;
-		} else {
-			result = Symbol('observable');
-			Symbol.observable = result;
-		}
-	} else {
-		result = '@@observable';
-	}
+  if (typeof _Symbol === 'function') {
+    if (_Symbol.observable) {
+      result = _Symbol.observable;
+    } else {
+      result = _Symbol('observable');
+      _Symbol.observable = result;
+    }
+  } else {
+    result = '@@observable';
+  }
 
-	return result;
+  return result;
 }
-
 /* global window */
+
 
 var root;
 
@@ -2527,7 +2869,7 @@ var semiWithNl = /;\n/;
  * - No nested rules support
  */
 
-var parse = (function (cssText) {
+var parse = function parse(cssText) {
   var style = {};
   var split = cssText.split(semiWithNl);
 
@@ -2547,7 +2889,7 @@ var parse = (function (cssText) {
   }
 
   return style;
-});
+};
 
 var onProcessRule = function onProcessRule(rule) {
   if (typeof rule.style === 'string') {
@@ -2742,17 +3084,18 @@ function jssGlobal() {
     onProcessRule: onProcessRule
   };
 }
-
 /* eslint-disable no-use-before-define */
 
+
 var isObject = function isObject(obj) {
-  return obj && typeof obj === 'object' && !Array.isArray(obj);
+  return obj && _typeof2(obj) === 'object' && !Array.isArray(obj);
 };
 
 var valueNs = "extendCurrValue" + Date.now();
 
 function mergeExtend(style, rule, sheet, newStyle) {
-  var extendType = typeof style.extend; // Extend using a rule name.
+  var extendType = _typeof2(style.extend); // Extend using a rule name.
+
 
   if (extendType === 'string') {
     if (!sheet) return;
@@ -2860,7 +3203,7 @@ function jssExtend() {
       return null;
     }
 
-    if (typeof value === 'object') {
+    if (_typeof2(value) === 'object') {
       // $FlowFixMe: This will be an object
       for (var _key in value) {
         rule.prop(_key, value[_key]);
@@ -2925,17 +3268,22 @@ function jssNested() {
     return result;
   }
 
-  function getOptions(rule, container, options) {
+  function getOptions(rule, container, prevOptions) {
     // Options has been already created, now we only increase index.
-    if (options) return _extends({}, options, {
-      index: options.index + 1
+    if (prevOptions) return _extends({}, prevOptions, {
+      index: prevOptions.index + 1
     });
     var nestingLevel = rule.options.nestingLevel;
     nestingLevel = nestingLevel === undefined ? 1 : nestingLevel + 1;
-    return _extends({}, rule.options, {
+
+    var options = _extends({}, rule.options, {
       nestingLevel: nestingLevel,
-      index: container.indexOf(rule) + 1
+      index: container.indexOf(rule) + 1 // We don't need the parent name to be set options for chlid.
+
     });
+
+    delete options.name;
+    return options;
   }
 
   function onProcessStyle(style, rule, sheet) {
@@ -2981,7 +3329,6 @@ function jssNested() {
     onProcessStyle: onProcessStyle
   };
 }
-
 /**
  * Set selector.
  *
@@ -2989,6 +3336,8 @@ function jssNested() {
  * @param {String} className class string
  * @return {Boolean} flag, indicating function was successfull or not
  */
+
+
 function registerClass(rule, className) {
   // Skip falsy values
   if (!className) return true; // Support array of class names `{composes: ['foo', 'bar']}`
@@ -3051,31 +3400,32 @@ function jssCompose() {
     onProcessStyle: onProcessStyle
   };
 }
-
 /* eslint-disable no-var, prefer-template */
+
+
 var uppercasePattern = /[A-Z]/g;
 var msPattern = /^ms-/;
 var cache = {};
 
 function toHyphenLower(match) {
-  return '-' + match.toLowerCase()
+  return '-' + match.toLowerCase();
 }
 
 function hyphenateStyleName(name) {
   if (cache.hasOwnProperty(name)) {
-    return cache[name]
+    return cache[name];
   }
 
   var hName = name.replace(uppercasePattern, toHyphenLower);
-  return (cache[name] = msPattern.test(hName) ? '-' + hName : hName)
+  return cache[name] = msPattern.test(hName) ? '-' + hName : hName;
 }
-
 /**
  * Convert camel cased property names to dash separated.
  *
  * @param {Object} style
  * @return {Object}
  */
+
 
 function convertCase(style) {
   var converted = {};
@@ -3254,10 +3604,10 @@ var defaultUnits = {
   'text-shadow-y': px,
   'text-shadow-blur': px
 };
-
 /**
  * Clones the object and adds a camel cased property version.
  */
+
 function addCamelCasedVersion(obj) {
   var regExp = /(-[a-z])/g;
 
@@ -3287,7 +3637,7 @@ function iterate(prop, value, options) {
     for (var i = 0; i < value.length; i++) {
       value[i] = iterate(prop, value[i], options);
     }
-  } else if (typeof value === 'object') {
+  } else if (_typeof2(value) === 'object') {
     if (prop === 'fallbacks') {
       for (var innerProp in value) {
         value[innerProp] = iterate(innerProp, value[innerProp], options);
@@ -3342,11 +3692,12 @@ function defaultUnit(options) {
     onChangeValue: onChangeValue
   };
 }
-
 /**
  * A scheme for converting properties from array to regular style.
  * All properties listed below will be transformed to a string separated by space.
  */
+
+
 var propArray = {
   'background-size': true,
   'background-position': true,
@@ -3573,7 +3924,6 @@ var customPropObj = {
     columnGap: 'grid-column-gap'
   }
 };
-
 /* eslint-disable no-use-before-define */
 
 /**
@@ -3584,6 +3934,7 @@ var customPropObj = {
  * @param {String} original rule
  * @return {String} mapped values
  */
+
 function mapValuesByProp(value, prop, rule) {
   return value.map(function (item) {
     return objectToArray(item, prop, rule, false, true);
@@ -3599,7 +3950,7 @@ function processArray(value, prop, scheme, rule) {
   if (value.length === 0) return [];
   if (Array.isArray(value[0])) return processArray(value[0], prop, scheme, rule);
 
-  if (typeof value[0] === 'object') {
+  if (_typeof2(value[0]) === 'object') {
     return mapValuesByProp(value, prop, rule);
   }
 
@@ -3687,7 +4038,7 @@ function styleDetector(style, rule, isFallback) {
 
         if (!style[prop].length) delete style[prop];
       }
-    } else if (typeof value === 'object') {
+    } else if (_typeof2(value) === 'object') {
       if (prop === 'fallbacks') {
         style.fallbacks = styleDetector(style.fallbacks, rule, true);
         continue;
@@ -3748,9 +4099,9 @@ function _nonIterableSpread$1() {
 
 function _toConsumableArray$1(arr) {
   return _arrayWithoutHoles$1(arr) || _iterableToArray$1(arr) || _nonIterableSpread$1();
-}
+} // Export javascript style and css style vendor prefixes.
 
-// Export javascript style and css style vendor prefixes.
+
 var js = '';
 var css = '';
 var vendor = '';
@@ -3807,7 +4158,6 @@ var prefix = {
   browser: browser,
   isTouch: isTouch
 };
-
 /**
  * Test if a keyframe at-rule should be prefixed or not
  *
@@ -3823,9 +4173,8 @@ function supportedKeyframes(key) {
 
   if (prefix.js === 'ms') return key;
   return "@" + prefix.css + "keyframes" + key.substr(10);
-}
+} // https://caniuse.com/#search=appearance
 
-// https://caniuse.com/#search=appearance
 
 var appearence = {
   noPrefill: ['appearance'],
@@ -3834,9 +4183,7 @@ var appearence = {
     if (prefix.js === 'ms') return "-webkit-" + prop;
     return prefix.css + prop;
   }
-};
-
-// https://caniuse.com/#search=color-adjust
+}; // https://caniuse.com/#search=color-adjust
 
 var colorAdjust = {
   noPrefill: ['color-adjust'],
@@ -3846,7 +4193,6 @@ var colorAdjust = {
     return prop;
   }
 };
-
 var regExp = /[-\s]+(.)?/g;
 /**
  * Replaces the letter with the capital letter
@@ -3872,7 +4218,6 @@ function toUpper(match, c) {
 function camelize(str) {
   return str.replace(regExp, toUpper);
 }
-
 /**
  * Convert dash separated strings to pascal cased.
  *
@@ -3881,12 +4226,12 @@ function camelize(str) {
  * @api private
  */
 
+
 function pascalize(str) {
   return camelize("-" + str);
-}
-
-// but we can use a longhand property instead.
+} // but we can use a longhand property instead.
 // https://caniuse.com/#search=mask
+
 
 var mask = {
   noPrefill: ['mask'],
@@ -3907,9 +4252,7 @@ var mask = {
 
     return prop;
   }
-};
-
-// https://caniuse.com/#search=text-orientation
+}; // https://caniuse.com/#search=text-orientation
 
 var textOrientation = {
   noPrefill: ['text-orientation'],
@@ -3922,9 +4265,7 @@ var textOrientation = {
 
     return prop;
   }
-};
-
-// https://caniuse.com/#search=transform
+}; // https://caniuse.com/#search=transform
 
 var transform = {
   noPrefill: ['transform'],
@@ -3937,9 +4278,7 @@ var transform = {
 
     return prefix.css + prop;
   }
-};
-
-// https://caniuse.com/#search=transition
+}; // https://caniuse.com/#search=transition
 
 var transition = {
   noPrefill: ['transition'],
@@ -3952,9 +4291,7 @@ var transition = {
 
     return prefix.css + prop;
   }
-};
-
-// https://caniuse.com/#search=writing-mode
+}; // https://caniuse.com/#search=writing-mode
 
 var writingMode = {
   noPrefill: ['writing-mode'],
@@ -3967,9 +4304,7 @@ var writingMode = {
 
     return prop;
   }
-};
-
-// https://caniuse.com/#search=user-select
+}; // https://caniuse.com/#search=user-select
 
 var userSelect = {
   noPrefill: ['user-select'],
@@ -3982,9 +4317,7 @@ var userSelect = {
 
     return prop;
   }
-};
-
-// https://caniuse.com/#search=multicolumn
+}; // https://caniuse.com/#search=multicolumn
 // https://github.com/postcss/autoprefixer/issues/491
 // https://github.com/postcss/autoprefixer/issues/177
 
@@ -4005,9 +4338,7 @@ var breakPropsOld = {
 
     return false;
   }
-};
-
-// See https://github.com/postcss/autoprefixer/issues/324.
+}; // See https://github.com/postcss/autoprefixer/issues/324.
 
 var inlineLogicalOld = {
   supportedProperty: function supportedProperty(prop, style) {
@@ -4016,9 +4347,7 @@ var inlineLogicalOld = {
     var newProp = prop.replace('-inline', '');
     return prefix.js + pascalize(newProp) in style ? prefix.css + newProp : false;
   }
-};
-
-// Camelization is required because we can't test using.
+}; // Camelization is required because we can't test using.
 // CSS syntax for e.g. in FF.
 
 var unprefixed = {
@@ -4026,7 +4355,6 @@ var unprefixed = {
     return camelize(prop) in style ? prop : false;
   }
 };
-
 var prefixed = {
   supportedProperty: function supportedProperty(prop, style) {
     var pascalized = pascalize(prop); // Return custom CSS variable without prefixing.
@@ -4039,9 +4367,7 @@ var prefixed = {
     if (prefix.js !== 'Webkit' && "Webkit" + pascalized in style) return "-webkit-" + prop;
     return false;
   }
-};
-
-// https://caniuse.com/#search=scroll-snap
+}; // https://caniuse.com/#search=scroll-snap
 
 var scrollSnap = {
   supportedProperty: function supportedProperty(prop) {
@@ -4053,9 +4379,7 @@ var scrollSnap = {
 
     return prop;
   }
-};
-
-// https://caniuse.com/#search=overscroll-behavior
+}; // https://caniuse.com/#search=overscroll-behavior
 
 var overscrollBehavior = {
   supportedProperty: function supportedProperty(prop) {
@@ -4068,7 +4392,6 @@ var overscrollBehavior = {
     return prop;
   }
 };
-
 var propMap = {
   'flex-grow': 'flex-positive',
   'flex-shrink': 'flex-negative',
@@ -4087,7 +4410,6 @@ var flex2012 = {
     return prefix.js + pascalize(newProp) in style ? prefix.css + newProp : false;
   }
 };
-
 var propMap$1 = {
   flex: 'box-flex',
   'flex-grow': 'box-flex',
@@ -4128,9 +4450,7 @@ var flex2009 = {
 
     return false;
   }
-};
-
-// plugins = [
+}; // plugins = [
 //   ...plugins,
 //    breakPropsOld,
 //    inlineLogicalOld,
@@ -4157,7 +4477,6 @@ var noPrefill = plugins$1.filter(function (p) {
   a.push.apply(a, _toConsumableArray$1(p.noPrefill));
   return a;
 }, []);
-
 var el;
 var cache$1 = {};
 
@@ -4197,9 +4516,9 @@ if (isBrowser) {
 function supportedProperty(prop, options) {
   if (options === void 0) {
     options = {};
-  }
+  } // For server-side rendering.
 
-  // For server-side rendering.
+
   if (!el) return prop; // Remove cache for benchmark tests or return property from the cache.
 
   if ( true && cache$1[prop] != null) {
@@ -4318,12 +4637,12 @@ function supportedValue(property, value) {
   cache$1$1[cacheKey] = prefixedValue;
   return cache$1$1[cacheKey];
 }
-
 /**
  * Add vendor prefix to a property name when needed.
  *
  * @api public
  */
+
 
 function jssVendorPrefixer() {
   function onProcessRule(rule) {
@@ -4373,10 +4692,11 @@ function jssVendorPrefixer() {
     onChangeValue: onChangeValue
   };
 }
-
 /**
  * Sort props by length.
  */
+
+
 function jssPropsSort() {
   var sort = function sort(prop0, prop1) {
     if (prop0.length === prop1.length) {
@@ -4401,7 +4721,7 @@ function jssPropsSort() {
   };
 }
 
-var index$1 = (function (options) {
+var index$1 = function index$1(options) {
   if (options === void 0) {
     options = {};
   }
@@ -4409,7 +4729,7 @@ var index$1 = (function (options) {
   return {
     plugins: [functionPlugin(), observablePlugin(options.observable), templatePlugin(), jssGlobal(), jssExtend(), jssNested(), jssCompose(), camelCase(), defaultUnit(options.defaultUnit), jssExpand(), jssVendorPrefixer(), jssPropsSort()]
   };
-});
+};
 
 var styles = {
   svgFunnelLabels: {
@@ -4493,18 +4813,17 @@ var styles = {
     }
   }
 };
-
 index.setup(index$1());
 
 var FunnelGraph =
 /*#__PURE__*/
 function () {
   function FunnelGraph(options) {
-    _classCallCheck(this, FunnelGraph);
-
-    // if(FunnelGraph.instance) {
+    _classCallCheck(this, FunnelGraph); // if(FunnelGraph.instance) {
     //   return FunnelGraph.instance
     // }
+
+
     this.styles = index.createStyleSheet(styles).attach();
     this.data = options.data;
     this.gradientDirection = options.gradientDirection && options.gradientDirection === 'vertical' ? 'vertical' : 'horizontal';
@@ -4554,7 +4873,7 @@ function () {
   }, {
     key: "getColorLabel",
     // end static
-    // Gets 
+    // Gets
     value: function getColorLabel() {
       var color = this.data.colors.label || 'gray';
       return color;
@@ -4650,7 +4969,7 @@ function () {
       }
 
       return points;
-    } // end Gets 
+    } // end Gets
 
   }, {
     key: "applyGradient",
@@ -4786,7 +5105,7 @@ function () {
     value: function getCustomPercents(options) {
       if (!options.data) throw new Error('Data is missing');
       var data = options.data;
-      if (typeof data.percents === 'undefined') ;
+      if (typeof data.percents === 'undefined') return false;
       return data.percents;
     }
   }, {
@@ -4822,8 +5141,8 @@ var renderPipeline = function renderPipeline(config) {
 };
 
 var Funnel = function Funnel(props) {
-  var funnelRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
+  var funnelRef = React.useRef(null);
+  React.useEffect(function () {
     var data = props.data,
         labelKey = props.labelKey,
         valueKey = props.valueKey,
@@ -4846,36 +5165,58 @@ var Funnel = function Funnel(props) {
       width: width
     });
   }, []);
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  React.useEffect(function () {
+    var data = props.data,
+        labelKey = props.labelKey,
+        valueKey = props.valueKey,
+        height = props.height,
+        width = props.width,
+        colors = props.colors,
+        gradientDirection = props.gradientDirection,
+        responsive = props.responsive;
+    renderPipeline({
+      container: funnelRef.current,
+      data: {
+        colors: colors,
+        labels: props.hasOwnProperty('labelKey') ? normalizeData(data, labelKey) : [],
+        values: props.hasOwnProperty('valueKey') ? normalizeData(data, valueKey) : []
+      },
+      displayPercent: props.displayPercent,
+      gradientDirection: gradientDirection,
+      height: height,
+      responsive: responsive,
+      width: width
+    });
+  }, [props.data]);
+  return React__default.createElement("div", {
     ref: funnelRef
   });
 };
 
 Funnel.propTypes = {
-  data: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.array.isRequired,
-  valueKey: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string.isRequired,
-  labelKey: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  height: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number.isRequired,
-  colors: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object,
-  responsive: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool
+  data: PropTypes.array.isRequired,
+  valueKey: PropTypes.string.isRequired,
+  labelKey: PropTypes.string,
+  height: PropTypes.number.isRequired,
+  colors: PropTypes.object,
+  responsive: PropTypes.bool
 };
-var index$2 = react__WEBPACK_IMPORTED_MODULE_0___default.a.memo(Funnel);
+var index$2 = React__default.memo(Funnel);
 
 var Bar = function Bar() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Bar");
+  return React__default.createElement("h1", null, "Bar");
 };
 
-
-//# sourceMappingURL=index.es.js.map
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "../node_modules/webpack/buildin/global.js"), __webpack_require__(/*! ./../../webpack/buildin/harmony-module.js */ "../node_modules/webpack/buildin/harmony-module.js")(module)))
+exports.Bar = Bar;
+exports.Funnel = index$2;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../node_modules/webpack/buildin/global.js */ "../node_modules/webpack/buildin/global.js"), __webpack_require__(/*! ./../../../node_modules/webpack/buildin/module.js */ "../node_modules/webpack/buildin/module.js")(module)))
 
 /***/ }),
 
-/***/ "../node_modules/object-assign/index.js":
-/*!**********************************************!*\
-  !*** ../node_modules/object-assign/index.js ***!
-  \**********************************************/
+/***/ "./Funnel-React/node_modules/object-assign/index.js":
+/*!**********************************************************!*\
+  !*** ./Funnel-React/node_modules/object-assign/index.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4974,10 +5315,10 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 /***/ }),
 
-/***/ "../node_modules/prop-types/checkPropTypes.js":
-/*!****************************************************!*\
-  !*** ../node_modules/prop-types/checkPropTypes.js ***!
-  \****************************************************/
+/***/ "./Funnel-React/node_modules/prop-types/checkPropTypes.js":
+/*!****************************************************************!*\
+  !*** ./Funnel-React/node_modules/prop-types/checkPropTypes.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4994,7 +5335,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 var printWarning = function() {};
 
 if (true) {
-  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "../node_modules/prop-types/lib/ReactPropTypesSecret.js");
+  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./Funnel-React/node_modules/prop-types/lib/ReactPropTypesSecret.js");
   var loggedTypeFailures = {};
   var has = Function.call.bind(Object.prototype.hasOwnProperty);
 
@@ -5088,10 +5429,10 @@ module.exports = checkPropTypes;
 
 /***/ }),
 
-/***/ "../node_modules/prop-types/factoryWithTypeCheckers.js":
-/*!*************************************************************!*\
-  !*** ../node_modules/prop-types/factoryWithTypeCheckers.js ***!
-  \*************************************************************/
+/***/ "./Funnel-React/node_modules/prop-types/factoryWithTypeCheckers.js":
+/*!*************************************************************************!*\
+  !*** ./Funnel-React/node_modules/prop-types/factoryWithTypeCheckers.js ***!
+  \*************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5105,11 +5446,11 @@ module.exports = checkPropTypes;
 
 
 
-var ReactIs = __webpack_require__(/*! react-is */ "../node_modules/react-is/index.js");
-var assign = __webpack_require__(/*! object-assign */ "../node_modules/object-assign/index.js");
+var ReactIs = __webpack_require__(/*! react-is */ "./Funnel-React/node_modules/react-is/index.js");
+var assign = __webpack_require__(/*! object-assign */ "./Funnel-React/node_modules/object-assign/index.js");
 
-var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "../node_modules/prop-types/lib/ReactPropTypesSecret.js");
-var checkPropTypes = __webpack_require__(/*! ./checkPropTypes */ "../node_modules/prop-types/checkPropTypes.js");
+var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./Funnel-React/node_modules/prop-types/lib/ReactPropTypesSecret.js");
+var checkPropTypes = __webpack_require__(/*! ./checkPropTypes */ "./Funnel-React/node_modules/prop-types/checkPropTypes.js");
 
 var has = Function.call.bind(Object.prototype.hasOwnProperty);
 var printWarning = function() {};
@@ -5691,10 +6032,10 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 /***/ }),
 
-/***/ "../node_modules/prop-types/index.js":
-/*!*******************************************!*\
-  !*** ../node_modules/prop-types/index.js ***!
-  \*******************************************/
+/***/ "./Funnel-React/node_modules/prop-types/index.js":
+/*!*******************************************************!*\
+  !*** ./Funnel-React/node_modules/prop-types/index.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5706,21 +6047,21 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
  */
 
 if (true) {
-  var ReactIs = __webpack_require__(/*! react-is */ "../node_modules/react-is/index.js");
+  var ReactIs = __webpack_require__(/*! react-is */ "./Funnel-React/node_modules/react-is/index.js");
 
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
   var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ "../node_modules/prop-types/factoryWithTypeCheckers.js")(ReactIs.isElement, throwOnDirectAccess);
+  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ "./Funnel-React/node_modules/prop-types/factoryWithTypeCheckers.js")(ReactIs.isElement, throwOnDirectAccess);
 } else {}
 
 
 /***/ }),
 
-/***/ "../node_modules/prop-types/lib/ReactPropTypesSecret.js":
-/*!**************************************************************!*\
-  !*** ../node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
-  \**************************************************************/
+/***/ "./Funnel-React/node_modules/prop-types/lib/ReactPropTypesSecret.js":
+/*!**************************************************************************!*\
+  !*** ./Funnel-React/node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5741,10 +6082,10 @@ module.exports = ReactPropTypesSecret;
 
 /***/ }),
 
-/***/ "../node_modules/react-is/cjs/react-is.development.js":
-/*!************************************************************!*\
-  !*** ../node_modules/react-is/cjs/react-is.development.js ***!
-  \************************************************************/
+/***/ "./Funnel-React/node_modules/react-is/cjs/react-is.development.js":
+/*!************************************************************************!*\
+  !*** ./Funnel-React/node_modules/react-is/cjs/react-is.development.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5989,10 +6330,10 @@ exports.isSuspense = isSuspense;
 
 /***/ }),
 
-/***/ "../node_modules/react-is/index.js":
-/*!*****************************************!*\
-  !*** ../node_modules/react-is/index.js ***!
-  \*****************************************/
+/***/ "./Funnel-React/node_modules/react-is/index.js":
+/*!*****************************************************!*\
+  !*** ./Funnel-React/node_modules/react-is/index.js ***!
+  \*****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -6000,303 +6341,8 @@ exports.isSuspense = isSuspense;
 
 
 if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "../node_modules/react-is/cjs/react-is.development.js");
+  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./Funnel-React/node_modules/react-is/cjs/react-is.development.js");
 }
-
-
-/***/ }),
-
-/***/ "../node_modules/tslib/tslib.es6.js":
-/*!******************************************!*\
-  !*** ../node_modules/tslib/tslib.es6.js ***!
-  \******************************************/
-/*! exports provided: __extends, __assign, __rest, __decorate, __param, __metadata, __awaiter, __generator, __exportStar, __values, __read, __spread, __spreadArrays, __await, __asyncGenerator, __asyncDelegator, __asyncValues, __makeTemplateObject, __importStar, __importDefault */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__extends", function() { return __extends; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__assign", function() { return __assign; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__rest", function() { return __rest; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__decorate", function() { return __decorate; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__param", function() { return __param; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__metadata", function() { return __metadata; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__awaiter", function() { return __awaiter; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__generator", function() { return __generator; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__exportStar", function() { return __exportStar; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__values", function() { return __values; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__read", function() { return __read; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spread", function() { return __spread; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__spreadArrays", function() { return __spreadArrays; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__await", function() { return __await; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncGenerator", function() { return __asyncGenerator; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncDelegator", function() { return __asyncDelegator; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__asyncValues", function() { return __asyncValues; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__makeTemplateObject", function() { return __makeTemplateObject; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importStar", function() { return __importStar; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "__importDefault", function() { return __importDefault; });
-/*! *****************************************************************************
-Copyright (c) Microsoft Corporation. All rights reserved.
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use
-this file except in compliance with the License. You may obtain a copy of the
-License at http://www.apache.org/licenses/LICENSE-2.0
-
-THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
-WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
-MERCHANTABLITY OR NON-INFRINGEMENT.
-
-See the Apache Version 2.0 License for specific language governing permissions
-and limitations under the License.
-***************************************************************************** */
-/* global Reflect, Promise */
-
-var extendStatics = function(d, b) {
-    extendStatics = Object.setPrototypeOf ||
-        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-    return extendStatics(d, b);
-};
-
-function __extends(d, b) {
-    extendStatics(d, b);
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-}
-
-var __assign = function() {
-    __assign = Object.assign || function __assign(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-        }
-        return t;
-    }
-    return __assign.apply(this, arguments);
-}
-
-function __rest(s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-}
-
-function __decorate(decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-}
-
-function __param(paramIndex, decorator) {
-    return function (target, key) { decorator(target, key, paramIndex); }
-}
-
-function __metadata(metadataKey, metadataValue) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-}
-
-function __awaiter(thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-}
-
-function __generator(thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [op[0] & 2, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-}
-
-function __exportStar(m, exports) {
-    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
-}
-
-function __values(o) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator], i = 0;
-    if (m) return m.call(o);
-    return {
-        next: function () {
-            if (o && i >= o.length) o = void 0;
-            return { value: o && o[i++], done: !o };
-        }
-    };
-}
-
-function __read(o, n) {
-    var m = typeof Symbol === "function" && o[Symbol.iterator];
-    if (!m) return o;
-    var i = m.call(o), r, ar = [], e;
-    try {
-        while ((n === void 0 || n-- > 0) && !(r = i.next()).done) ar.push(r.value);
-    }
-    catch (error) { e = { error: error }; }
-    finally {
-        try {
-            if (r && !r.done && (m = i["return"])) m.call(i);
-        }
-        finally { if (e) throw e.error; }
-    }
-    return ar;
-}
-
-function __spread() {
-    for (var ar = [], i = 0; i < arguments.length; i++)
-        ar = ar.concat(__read(arguments[i]));
-    return ar;
-}
-
-function __spreadArrays() {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
-};
-
-function __await(v) {
-    return this instanceof __await ? (this.v = v, this) : new __await(v);
-}
-
-function __asyncGenerator(thisArg, _arguments, generator) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var g = generator.apply(thisArg, _arguments || []), i, q = [];
-    return i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i;
-    function verb(n) { if (g[n]) i[n] = function (v) { return new Promise(function (a, b) { q.push([n, v, a, b]) > 1 || resume(n, v); }); }; }
-    function resume(n, v) { try { step(g[n](v)); } catch (e) { settle(q[0][3], e); } }
-    function step(r) { r.value instanceof __await ? Promise.resolve(r.value.v).then(fulfill, reject) : settle(q[0][2], r); }
-    function fulfill(value) { resume("next", value); }
-    function reject(value) { resume("throw", value); }
-    function settle(f, v) { if (f(v), q.shift(), q.length) resume(q[0][0], q[0][1]); }
-}
-
-function __asyncDelegator(o) {
-    var i, p;
-    return i = {}, verb("next"), verb("throw", function (e) { throw e; }), verb("return"), i[Symbol.iterator] = function () { return this; }, i;
-    function verb(n, f) { i[n] = o[n] ? function (v) { return (p = !p) ? { value: __await(o[n](v)), done: n === "return" } : f ? f(v) : v; } : f; }
-}
-
-function __asyncValues(o) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
-    var m = o[Symbol.asyncIterator], i;
-    return m ? m.call(o) : (o = typeof __values === "function" ? __values(o) : o[Symbol.iterator](), i = {}, verb("next"), verb("throw"), verb("return"), i[Symbol.asyncIterator] = function () { return this; }, i);
-    function verb(n) { i[n] = o[n] && function (v) { return new Promise(function (resolve, reject) { v = o[n](v), settle(resolve, reject, v.done, v.value); }); }; }
-    function settle(resolve, reject, d, v) { Promise.resolve(v).then(function(v) { resolve({ value: v, done: d }); }, reject); }
-}
-
-function __makeTemplateObject(cooked, raw) {
-    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
-    return cooked;
-};
-
-function __importStar(mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
-    result.default = mod;
-    return result;
-}
-
-function __importDefault(mod) {
-    return (mod && mod.__esModule) ? mod : { default: mod };
-}
-
-
-/***/ }),
-
-/***/ "../node_modules/webpack/buildin/global.js":
-/*!*************************************************!*\
-  !*** ../node_modules/webpack/buildin/global.js ***!
-  \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || new Function("return this")();
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
-
-/***/ }),
-
-/***/ "../node_modules/webpack/buildin/harmony-module.js":
-/*!*********************************************************!*\
-  !*** ../node_modules/webpack/buildin/harmony-module.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function(originalModule) {
-	if (!originalModule.webpackPolyfill) {
-		var module = Object.create(originalModule);
-		// module.parent = undefined by default
-		if (!module.children) module.children = [];
-		Object.defineProperty(module, "loaded", {
-			enumerable: true,
-			get: function() {
-				return module.l;
-			}
-		});
-		Object.defineProperty(module, "id", {
-			enumerable: true,
-			get: function() {
-				return module.i;
-			}
-		});
-		Object.defineProperty(module, "exports", {
-			enumerable: true
-		});
-		module.webpackPolyfill = 1;
-	}
-	return module;
-};
 
 
 /***/ }),
@@ -6375,7 +6421,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "../node_modules/tslib/tslib.es6.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var funnel_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! funnel-react */ "../node_modules/funnel-react/dist/index.es.js");
+/* harmony import */ var _Funnel_React_dist__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Funnel-React/dist */ "./Funnel-React/dist/index.js");
+/* harmony import */ var _Funnel_React_dist__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_Funnel_React_dist__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
@@ -6440,7 +6487,7 @@ function (_super) {
         width: width,
         height: height
       }
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(funnel_react__WEBPACK_IMPORTED_MODULE_2__["Funnel"], {
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_Funnel_React_dist__WEBPACK_IMPORTED_MODULE_2__["Funnel"], {
       labelKey: "label",
       height: height - 100,
       width: width,
