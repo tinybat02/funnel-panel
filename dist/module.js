@@ -771,9 +771,7 @@ var escape = function escape(str) {
   return nativeEscape ? nativeEscape(str) : str.replace(escapeRegex, '\\$1');
 };
 
-var BaseStyleRule =
-/*#__PURE__*/
-function () {
+var BaseStyleRule = /*#__PURE__*/function () {
   function BaseStyleRule(key, style, options) {
     this.type = 'style';
     this.key = void 0;
@@ -809,7 +807,7 @@ function () {
     }
 
     var isEmpty = newValue == null || newValue === false;
-    var isDefined = name in this.style; // Value is empty and wasn't defined before.
+    var isDefined = (name in this.style); // Value is empty and wasn't defined before.
 
     if (isEmpty && !isDefined && !force) return this; // We are going to remove this value.
 
@@ -833,9 +831,7 @@ function () {
   return BaseStyleRule;
 }();
 
-var StyleRule =
-/*#__PURE__*/
-function (_BaseStyleRule) {
+var StyleRule = /*#__PURE__*/function (_BaseStyleRule) {
   _inheritsLoose(StyleRule, _BaseStyleRule);
 
   function StyleRule(key, style, options) {
@@ -959,9 +955,7 @@ var atRegExp = /@([\w-]+)/;
  * Conditional rule for @media, @supports
  */
 
-var ConditionalRule =
-/*#__PURE__*/
-function () {
+var ConditionalRule = /*#__PURE__*/function () {
   function ConditionalRule(key, styles, options) {
     this.type = 'conditional';
     this.at = void 0;
@@ -1055,9 +1049,7 @@ var nameRegExp = /@keyframes\s+([\w-]+)/;
  * Rule for @keyframes
  */
 
-var KeyframesRule =
-/*#__PURE__*/
-function () {
+var KeyframesRule = /*#__PURE__*/function () {
   function KeyframesRule(key, frames, options) {
     this.type = 'keyframes';
     this.at = '@keyframes';
@@ -1184,9 +1176,7 @@ var plugin = {
   }
 };
 
-var KeyframeRule =
-/*#__PURE__*/
-function (_BaseStyleRule) {
+var KeyframeRule = /*#__PURE__*/function (_BaseStyleRule) {
   _inheritsLoose(KeyframeRule, _BaseStyleRule);
 
   function KeyframeRule() {
@@ -1228,9 +1218,7 @@ var pluginKeyframeRule = {
   }
 };
 
-var FontFaceRule =
-/*#__PURE__*/
-function () {
+var FontFaceRule = /*#__PURE__*/function () {
   function FontFaceRule(key, style, options) {
     this.type = 'font-face';
     this.at = '@font-face';
@@ -1274,9 +1262,7 @@ var pluginFontFaceRule = {
   }
 };
 
-var ViewportRule =
-/*#__PURE__*/
-function () {
+var ViewportRule = /*#__PURE__*/function () {
   function ViewportRule(key, style, options) {
     this.type = 'viewport';
     this.at = '@viewport';
@@ -1309,9 +1295,7 @@ var pluginViewportRule = {
   }
 };
 
-var SimpleRule =
-/*#__PURE__*/
-function () {
+var SimpleRule = /*#__PURE__*/function () {
   function SimpleRule(key, value, options) {
     this.type = 'simple';
     this.key = void 0;
@@ -1373,9 +1357,7 @@ var forceUpdateOptions = {
 
 };
 
-var RuleList =
-/*#__PURE__*/
-function () {
+var RuleList = /*#__PURE__*/function () {
   // Rules registry for access by .get() method.
   // It contains the same rule registered by name and by selector.
   // Original styles object.
@@ -1618,9 +1600,7 @@ function () {
   return RuleList;
 }();
 
-var StyleSheet =
-/*#__PURE__*/
-function () {
+var StyleSheet = /*#__PURE__*/function () {
   function StyleSheet(styles, options) {
     this.options = void 0;
     this.deployed = void 0;
@@ -1817,9 +1797,7 @@ function () {
   return StyleSheet;
 }();
 
-var PluginsRegistry =
-/*#__PURE__*/
-function () {
+var PluginsRegistry = /*#__PURE__*/function () {
   function PluginsRegistry() {
     this.plugins = {
       internal: [],
@@ -1948,9 +1926,7 @@ function () {
  */
 
 
-var SheetsRegistry =
-/*#__PURE__*/
-function () {
+var SheetsRegistry = /*#__PURE__*/function () {
   function SheetsRegistry() {
     this.registry = [];
   }
@@ -2362,9 +2338,7 @@ var createStyle = function createStyle() {
   return el;
 };
 
-var DomRenderer =
-/*#__PURE__*/
-function () {
+var DomRenderer = /*#__PURE__*/function () {
   // HTMLStyleElement needs fixing https://github.com/facebook/flow/issues/2696
   function DomRenderer(sheet) {
     this.getPropertyValue = getPropertyValue;
@@ -2547,9 +2521,7 @@ function () {
 
 var instanceCounter = 0;
 
-var Jss =
-/*#__PURE__*/
-function () {
+var Jss = /*#__PURE__*/function () {
   function Jss(options) {
     this.id = instanceCounter++;
     this.version = "10.0.4";
@@ -2907,9 +2879,7 @@ function templatePlugin() {
 var at = '@global';
 var atPrefix = '@global ';
 
-var GlobalContainerRule =
-/*#__PURE__*/
-function () {
+var GlobalContainerRule = /*#__PURE__*/function () {
   function GlobalContainerRule(key, styles, options) {
     this.type = 'global';
     this.at = at;
@@ -2969,9 +2939,7 @@ function () {
   return GlobalContainerRule;
 }();
 
-var GlobalPrefixedRule =
-/*#__PURE__*/
-function () {
+var GlobalPrefixedRule = /*#__PURE__*/function () {
   function GlobalPrefixedRule(key, style, options) {
     this.type = 'global';
     this.at = at;
@@ -4815,9 +4783,7 @@ var styles = {
 };
 index.setup(index$1());
 
-var FunnelGraph =
-/*#__PURE__*/
-function () {
+var FunnelGraph = /*#__PURE__*/function () {
   function FunnelGraph(options) {
     _classCallCheck(this, FunnelGraph); // if(FunnelGraph.instance) {
     //   return FunnelGraph.instance
